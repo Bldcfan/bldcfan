@@ -272,7 +272,7 @@ body {
 }
 
 .container {
-    width: 600px; /* Example width for your main content */
+    width: 980px; /* Example width for your main content */
     margin: 0 auto; /* Centers the container */
     border: 1px solid #ccc;
     padding: 20px;
