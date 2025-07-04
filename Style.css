@@ -281,26 +281,17 @@ body {
   margin-bottom: 10px;
 }
 
-/* Responsive styles for tablets and smaller devices */
-@media (max-width: 768px) {
-  .container {
-    width: 95%;
-    padding: 10px;
-  }
-
-  .header, .content, .footer {
-    padding: 15px;
-  }
+ body {
+    min-width: 1024px; /* Matches the viewport width */
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
 }
 
-/* Responsive styles for mobile phones */
-@media (max-width: 480px) {
-  body {
-    font-size: 16px;
-  }
-
-  .header, .content, .footer {
-    padding: 10px;
-    font-size: 14px;
-  }
+.container {
+    width: 980px; /* Example width for your main content */
+    margin: 0 auto; /* Centers the container */
+    border: 1px solid #ccc;
+    padding: 20px;
+    background-color: #f9f9f9;
 }
