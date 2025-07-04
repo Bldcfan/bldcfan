@@ -261,25 +261,7 @@ body {
     user-select: none;
   }
 
-  /* Base styles for desktop and larger screens */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  line-height: 1.6;
-}
-
-.container {
-  width: 80%;
-  margin: auto;
-  padding: 20px;
-}
-
-.header, .content, .footer {
-  padding: 20px;
-  background-color: #f4f4f4;
-  margin-bottom: 10px;
-}
+  
 
  body {
     min-width: 1024px; /* Matches the viewport width */
