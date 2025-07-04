@@ -267,7 +267,7 @@ body {
  body {
     min-width: 1024px; /* Matches the viewport width */
     margin: 0;
-    padding: 20px;
+    padding: 50px;
     font-family: Arial, sans-serif;
 }
 
