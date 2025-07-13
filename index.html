@@ -42,42 +42,42 @@
                 </p>
                 
             </div>
-            <div class="hero-image relative w-64 h-64 bg-gradient-to-br from-red-500 to-blue-800 rounded-full flex items-center justify-center shadow-xl overflow-hidden"
-            aria-label="Stylized spinning fan icon with gradient background">
-       
-           <svg class="fan-svg absolute inset-0 w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet">
-               <g class="fan-blades-group">
-                   <path class="fan-blade-svg" fill="rgba(255, 255, 255, 0.8)" d="M 50 10 A 10 10 0 0 1 60 20 L 50 45 A 10 10 0 0 1 40 45 L 30 20 A 10 10 0 0 1 40 10 Z"></path>
-                   <path class="fan-blade-svg" fill="rgba(255, 255, 255, 0.8)" d="M 90 50 A 10 10 0 0 1 80 60 L 55 50 A 10 10 0 0 1 55 40 L 80 30 A 10 10 0 0 1 90 40 Z"></path>
-                   <path class="fan-blade-svg" fill="rgba(255, 255, 255, 0.8)" d="M 50 90 A 10 10 0 0 1 40 80 L 50 55 A 10 10 0 0 1 60 55 L 70 80 A 10 10 0 0 1 60 90 Z"></path>
-                   <path class="fan-blade-svg" fill="rgba(255, 255, 255, 0.8)" d="M 10 50 A 10 10 0 0 1 20 40 L 45 50 A 10 10 0 0 1 45 60 L 20 70 A 10 10 0 0 1 10 60 Z"></path>
-               </g>
-           </svg>
-       </div>
-       
-       <style>
-           .fan-svg {
-               /* This ensures the SVG fills its parent div */
-               display: block; /* Remove extra space below SVG */
-           }
-       
-           .fan-blades-group {
-               transform-origin: 50% 50%; /* Set the rotation origin to the center of the SVG viewBox */
-               animation: svgSpin 2s linear infinite;
-           }
-       
-           /* Define the animation */
-           @keyframes svgSpin {
-               from { transform: rotate(0deg); }
-               to { transform: rotate(360deg); }
-           }
-       
-           /* Basic styling for individual blades if needed, though fill is often inline */
-           .fan-blade-svg {
-               /* You could set fill here instead of inline if all blades are the same color */
-               /* fill: rgba(255, 255, 255, 0.8); */
-           }
-       </style>
+           <div class="hero-image relative w-64 h-64 bg-gradient-to-br from-red-500 to-blue-800 rounded-full flex items-center justify-center shadow-xl overflow-hidden"
+     aria-label="Stylized spinning fan icon with gradient background">
+
+    <svg class="fan-svg absolute inset-0 w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet">
+        <g class="fan-blades-group">
+            <path class="fan-blade-svg" fill="rgba(255, 255, 255, 0.8)" d="M 50 10 A 10 10 0 0 1 60 20 L 50 45 A 10 10 0 0 1 40 45 L 30 20 A 10 10 0 0 1 40 10 Z"></path>
+            <path class="fan-blade-svg" fill="rgba(255, 255, 255, 0.8)" d="M 90 50 A 10 10 0 0 1 80 60 L 55 50 A 10 10 0 0 1 55 40 L 80 30 A 10 10 0 0 1 90 40 Z"></path>
+            <path class="fan-blade-svg" fill="rgba(255, 255, 255, 0.8)" d="M 50 90 A 10 10 0 0 1 40 80 L 50 55 A 10 10 0 0 1 60 55 L 70 80 A 10 10 0 0 1 60 90 Z"></path>
+            <path class="fan-blade-svg" fill="rgba(255, 255, 255, 0.8)" d="M 10 50 A 10 10 0 0 1 20 40 L 45 50 A 10 10 0 0 1 45 60 L 20 70 A 10 10 0 0 1 10 60 Z"></path>
+        </g>
+    </svg>
+</div>
+
+<style>
+    .fan-svg {
+        /* This ensures the SVG fills its parent div */
+        display: block; /* Remove extra space below SVG */
+    }
+
+    .fan-blades-group {
+        transform-origin: 50% 50%; /* Set the rotation origin to the center of the SVG viewBox */
+        animation: svgSpin 2s linear infinite;
+    }
+
+    /* Define the animation */
+    @keyframes svgSpin {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+    }
+
+    /* Basic styling for individual blades if needed, though fill is often inline */
+    .fan-blade-svg {
+        /* You could set fill here instead of inline if all blades are the same color */
+        fill: rgb(0, 191, 255); /* Semi-transparent white */
+    }
+</style>
         </section>
 
         <section id="features" class="py-12 md:py-20 bg-gradient-to-br from-gray-50 to-blue-50">
