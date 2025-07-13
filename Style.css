@@ -1,0 +1,107 @@
+/* Global Styles */
+body {
+  font-family: 'Inter', sans-serif; /* Prioritize Inter font from Google Fonts */
+  background-color: #0080ff; /* Light blue-gray background */
+  color: #ea49ff; /* Darker text for contrast */
+  margin: 0; /* Ensures no default body margin */
+}
+
+/* Fan Animation Specific Styles (for the hero section fan) */
+.fan-blade {
+  width: 80px;
+  height: 20px;
+  background: linear-gradient(135deg, #ffffff 0%, #a734ff 100%); /* Blue gradient */
+  border-radius: 12px 12px 50% 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: left center;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+  animation: spin 3s linear infinite; /* Faster spin */
+}
+
+.fan-blade:nth-child(1) { transform: translate(-50%, -50%) rotate(0deg); animation-delay: 0s; }
+.fan-blade:nth-child(2) { transform: translate(-50%, -50%) rotate(90deg); animation-delay: -0.75s; }
+.fan-blade:nth-child(3) { transform: translate(-50%, -50%) rotate(180deg); animation-delay: -1.5s; }
+.fan-blade:nth-child(4) { transform: translate(-50%, -50%) rotate(270deg); animation-delay: -2.25s; }
+
+@keyframes spin {
+  0% { transform: translate(-50%, -50%) rotate(0deg); }
+  100% { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+/* Custom styles for the purchase table */
+#purchase table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #ff00e6;
+}
+
+#purchase th, #purchase td {
+  border: 1px solid #ffffff;
+  padding: 12px 15px;
+  text-align: left;
+}
+
+#purchase th {
+  background-color: #1900ff;
+  font-weight: 600;
+  color: #000000;
+}
+
+#purchase tr:nth-child(even) {
+  background-color: #00ffae;
+}
+
+#purchase .quantity-input {
+  width: 80px;
+  padding: 8px;
+  border: 1px solid #0073ff;
+  border-radius: 4px;
+  text-align: center;
+}
+
+#purchase #final-total-container {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: right;
+  color: #184bd6;
+}
+
+/* Responsive Design */
+@media (max-width: 767px) {
+  .hero-image {
+      width: 200px;
+      height: 200px;
+  }
+  .fan-blade {
+      width: 60px;
+      height: 15px;
+  }
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  text-align: center;
+  padding: 20px;
+}
+/* Custom CSS for the contact details section */
+
+/* Background pattern for the owner-info div */
+.bg-pattern-contact {
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB2aWV3Qm94PSIwIDAgMTAwIDEwMCIgeG1sbnM9Imh0dHA6Ly93d3cuc2tybS5kZXYvdW5kZWZpbm5lZCI+CiAgPGRlZnM+CiAgICA8cmFkaWFsR3JhZGllbnQgaWQ9ImdyYWRpZW50IiBjeD0iNTAlIiBjeT0iNTAlIiByPSI1MCUiIGZ4PSI1MCUiIGZ5PSI1MCUiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjZmZmIiBzdG9wLW9wYWNpdHk9IjAuMSIgLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjZmZmIiBzdG9wLW9wYWNpdHk9IjAuMCIgLz4KICAgIDwvcmFkaWFsR3JhZGllbnQ+CiAgPGNpcmNsZSBjeD0iNTAiIGN5PSI1MCIgcj0iNDUiIGZpbGw9InVybCgjZ3JhZGllbnQpIiAvPgo8L3N2Zz4=');
+  background-size: cover;
+}
+
+/* You can add other custom styles or overrides here if needed */
+
+/* Example of how you might define custom animations if you were not using Tailwind's built-in ones */
+/* @keyframes custom-fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.my-custom-fade-in {
+  animation: custom-fade-in 1s ease-in-out;
+} */
